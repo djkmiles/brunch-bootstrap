@@ -8,7 +8,7 @@
     "url": ""
   },
   "scripts": {
-    "start": "brunch watch --server",
+    "start": "brunch watch & cd public; browser-sync start --server --files \"*.html,css/*.css,js/*.js\" --port 1337",
     "prod": "brunch build --production"
   },
   "dependencies": {},
